@@ -15,3 +15,15 @@ This is a repo which utilizes GitHub Actions to make the `.u2f` firmware for the
 
 # LTS 
 Check the GitHub Versions of this repo for stable firmware builds.
+
+# Nice!Views
+To enable nice!views correctly using the mechboards.uk corne pcb you must add the following to `config/corne.keymaps`:
+
+```c 
+// nice_view connected with control pin 8 together with LEDs
+&nice_view_spi {
+    cs-gpios = <&pro_micro 8 GPIO_ACTIVE_HIGH>;
+};
+
+```
+
