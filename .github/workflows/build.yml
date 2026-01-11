@@ -5,4 +5,4 @@ jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
     with:
-      archive_name: 'corne-max-${{ github.run_number }}'
+      archive_name: 'zmk-firmware-${{ github.run_number }}'
