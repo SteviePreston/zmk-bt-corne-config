@@ -1,22 +1,20 @@
 #INFO: This file generates the GitHub Actions matrix.
 include:
-  - board: nice_nano
+  - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
-    artifact-name: corne_max_left_zmk_studio
+    artifact-name: corne_max_left
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
 
-  - board: nice_nano
+  - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
     artifact-name: corne_max_right
     
-  - board: nice_nano
+  - board: nice_nano_v2
     shield: cradio_left
-    artifact-name: ferris_left_zmk_studio 
+    artifact-name: ferris_left
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n 
 
-  - board: nice_nano
+  - board: nice_nano_v2
     shield: cradio_right
     artifact-name: ferris_right
 
